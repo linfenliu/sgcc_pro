@@ -1,0 +1,13 @@
+{
+  "domain": "sgcc_pro",
+  "name": "SGCC Pro",
+  "codeowners": ["@flew"],
+  "config_flow": true,
+  "documentation": "",
+  "iot_class": "cloud_polling",
+  "version": "0.1.0",
+  "requirements": [
+    "gmssl",
+    "aiofiles"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+    "config": {
+        "flow_title": "国家电网",
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {},
+        "step": {
+            "user": {
+                "title": "国家电网",
+                "description": "集成国家电网密码登录。(token失效后，请在\"配置选项\"中重新登录)",
+                "data": {
+                    "username": "请输入电网账号"
+                }
+            },
+            "pin": {
+                "title": "国家电网",
+                "description": "输入电网密码。(token失效后，请在\"配置选项\"中重新登录)",
+                "data": {
+                    "password": "请输入电网密码"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "debug": {
+                "title": "国家电网",
+                "description": "默认数据轮询间隔为6小时。过期后token会自动续期。",
+                "data": {
+                  "refresh_interval": "轮询间隔(主要数据)",
+                  "is_persistent_notify": "持久化通知",
+                  "is_debug": "调试模式",
+                  "push_notify_device": "推送到移动设备"
+                },
+                "data_description": {
+                  "is_debug": "打开调试开关后，将会打印所有请求日志。可在[配置]-[系统]-[日志]中查看。"
+                }
+              },
+            "pin": {
+                "title": "重新登录国家电网",
+                "description": "刷新 Token 异常，需重新登录。请输入电网密码。",
+                "data": {
+                    "password": "请输入电网密码"
+                }
+              }
+        }
+    }
+}
